@@ -4,55 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q4Seatwork1</title>
+    <style>
+        body{
+            background: #ffd8b5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-box{
+            background-color: #fff7f2;
+            width: 420px;
+            height: 420px;
+            padding: 24px;
+            border-radius: 14px;
+            border: 1px solid rgba(0,0,0,0.04);
+            font-size: 16px;
+            color: #4a2e2a;
+        }
+
+        h2{
+            margin: 0 0 14px 0;
+            color: #b84b2f;
+            font-size: 24px;
+            letter-spacing: 0.2px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 6px;
+            color: #7a3f34;
+            font-weight: 600;
+        }
+
+        .form-control{
+            width: 100%;
+            padding: 10px 12px;
+            box-sizing: border-box;
+            border: 1px solid #f1cfc2;
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            outline: none;
+        }
+
+        .form-control:focus{
+            border-color: #ff8a65;
+            box-shadow: 0 6px 18px rgba(255,138,101,0.08);
+        }
+
+        .btn-login{
+            background: linear-gradient(90deg, #ff7a18 0%, #ffb199 100%);
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(255,122,24,0.14);
+        }
+
+        .btn-login:hover{
+            transform: translateY(-1px);
+        }
+
+        .btn-cancel{
+            background: transparent;
+            color: #b85a45;
+            padding: 10px 16px;
+            border-radius: 10px;
+            border: 1px solid rgba(184,90,69,0.12);
+            cursor: pointer;
+        }
+
+        /* removed .mb utility classes */
+        .me-2{ margin-right: 8px; }
+    </style>
 </head>
-<style>
-    body{
-        background-color: #0c57e4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .login-box{
-        background-color: rgb(255, 250, 250);
-        width: 420px;
-        height: 420px;
-        padding: 24px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        font-family: comic sans ms, cursive, sans-serif;
-        font-size: 16px;
-    }
-
-    .form-control{
-        width: 100%;
-        padding: 8px 10px;
-        box-sizing: border-box;
-    }
-    .btn-login{
-        background-color: #007bff;
-        color: white;
-    }
-
-</style>
 <body>
     <div class="login-box">
-      <h2>Login</h2>  
-<form id="LoginID">
-    <div class="mb-3">
-<label type="text" class="form-label">Username</label>
-        <input type="text" class="form-control" id="Username" name="Username">
-    </div>
-    <div class="mb-3">
-        <label type="password" class="form-label">Password</label>
- <input type="password" class="form-control" id="Password" name="Password">
-    </div>
-   <div class="mb-4">
- <button type="button" onclick="authenticate()" class="btn btn-login me-2">Login</button>
- <button type="reset" class="btn btn-cancel">Cancel</button>
-            </div>
-
-</form>
+      <h2>Login</h2>
+      <form id="LoginID">
+                <div>
+          <label class="form-label" for="Username">Username</label>
+          <input type="text" class="form-control" id="Username" name="Username">
+        </div>
+                <div>
+          <label class="form-label" for="Password">Password</label>
+          <input type="password" class="form-control" id="Password" name="Password">
+        </div>
+                <div>
+          <button type="button" onclick="authenticate()" class="btn btn-login me-2">Login</button>
+          <button type="reset" class="btn btn-cancel">Cancel</button>
+        </div>
+      </form>
     </div>
 </body>
 </html>
