@@ -7,7 +7,24 @@
 </head>
 <body>
     <div>
-      <h1>Login</h1>  
+      <h2>Login</h2>  
+<form id="LoginID">
+    <div class="mb-3">
+<label type="text" class="form-label">Username</label>
+        <input type="text" class="form-control" id="Username" name="Username">
+    </div>
+    <div class="mb-3">
+        <label type="password" class="form-label">Password</label>
+ <input type="password" class="form-control" id="Password" name="Password">
+    </div>
+   <div class="mb-4">
+ <button type="button" onclick="authenticate()" class="btn btn-login me-2">Login</button>
+ <button type="reset" class="btn btn-cancel">Cancel</button>
+            </div>
+
+</form>
+
+
     </div>
 </body>
 </html>
