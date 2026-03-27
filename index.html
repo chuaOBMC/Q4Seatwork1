@@ -54,6 +54,22 @@
             margin-bottom: 10px;
         }
 
+        /* stay-logged-in toggle button */
+        .btn-toggle {
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            background: transparent;
+            cursor: pointer;
+            margin-bottom: 8px;
+        }
+
+        .btn-toggle.active {
+            background: #ffefe0;
+            border-color: #ff7a18;
+        }
+
     </style>
     </head>
     <body>
@@ -67,10 +83,13 @@
     <label for="Password">Password
     </label>
     <input id="Password" name="Password" class="input" type="password">
-         <div style="margin-top:8px">
-            <button type="button" onclick="Pass()" class="btn btn-primary">Login</button>
-            <button type="reset" class="btn btn-secondary">Cancel</button>
-    </div>
+        <div style="margin-top:8px">
+            <button class="btn-toggle">Stay logged in</button>
+            <div style="margin-top:6px">
+                <button type="button" onclick="Pass()" class="btn btn-primary">Login</button>
+                <button type="reset" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
 </form>
     </div>
     <script>
