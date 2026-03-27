@@ -16,7 +16,7 @@
         }
 
         .login-box {
-            background: #fff2d9;
+            background: #ffe0c9;
             padding: 20px;
             border-radius: 8px;
             width: 420px;
@@ -66,18 +66,20 @@
             <div class="login-box">
                 <h2>Login</h2>
                 <form id="LoginID">
-                    <label for="Username">Username</label>
-                    <input id="Username" name="Username" class="input" type="text">
-                    <label for="Password">Password</label>
-                    <input id="Password" name="Password" class="input" type="password">
-                    <div style="margin-top:8px">
-                        <button type="button" onclick="authenticate()" class="btn btn-primary">Login</button>
-                        <button type="reset" class="btn btn-secondary">Cancel</button>
-                    </div>
-                </form>
-            </div>
+ <label for="Username">Username
+ </label>
+<input id="Username" name="Username" class="input" type="text">
+    <label for="Password">Password
+    </label>
+    <input id="Password" name="Password" class="input" type="password">
+         <div style="margin-top:8px">
+            <button type="button" onclick="Pass()" class="btn btn-primary">Login</button>
+            <button type="reset" class="btn btn-secondary">Cancel</button>
+    </div>
+</form>
+    </div>
     <script>
-        function authenticate() {
+        function Pass() {
             var username = document.getElementById('Username').value;
             var password = document.getElementById('Password').value;
 
